@@ -13,6 +13,49 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
+
+::selection {
+    color: white;
+    background: black;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+#text{
+display:none;
+}
+.btn-container{
+  margin: auto;
+  height:44px;
+  width:166.23px;
+  
+}
+a:active{
+  color:#ffd323;
+}
+
+.Read-more{
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  font-size:20px;
+  background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  color:white;
+  font-family:cursive;
+  box-sizing:border-box;
+}
+
+.triangulo{
+  position: absolute;
+   top:90.5%;
+   border-color: #ffcccc blue red lavender;
+    border-style: solid;
+    border-width: 58px 0px 0px 1000px;
+    height: 0px;
+    width: 0px;
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -99,7 +142,12 @@ body {
 }
 
 }
-        
+
+.Second-nav{
+  background-color:#ffcccc;
+  margin:5px 5px 5px 5px;
+}     
+
 </style>
 </head>
 <body>    
@@ -122,34 +170,48 @@ body {
 <button class="w3-button w3-display-left w3-jumbo" onclick="plusDivs(-1)">&#10094;</button>
 <button class="w3-button w3-display-right w3-jumbo" onclick="plusDivs(+1)">&#10095;</button>
  
-    
+    <div class="Second-nav float-lg-right well text-right"  style="background-color: #ffcccc;height: 60px;  width:100%;  ">
+      <ul class="list-inline Second-nav">
+        <li class="list-inline-item">Lorem ipsum</li>
+        <li class="list-inline-item">Phasellus iaculis</li>
+        <li class="list-inline-item">Nulla volutpat</li>
+      </ul>
+  </div>
+
+
+                              <div class="triangulo"></div>
+                              <div class="Second-nav float-lg-right well text-left"  style="background-color:transparent;position: absolute; top:90.5%;left:0;height: 60px;  width:100%;  ">
+      <ul class="list-inline Second-nav"><span class="icon bullet_icon">7</span>
+        <li class="list-inline-item">Lorem ipsum</li>
+        <li class="list-inline-item">Phasellus iaculis</li>
+        <li class="list-inline-item">Nulla volutpat</li>
+      </ul>
+  </div>
 <div class="container-fluid">
    <div class="row">
-    <div class="col-xs-2" style="background-color:lavender;">
-         
-So,this is  my first project on html and javascript nd wehwedwfwew
-scdcd
-cdddchjjhebceice 3
-fqwfwqeue3qefwew
-ffweuwqwew 
+    <div class="col-xs-2" >   </div>
+    <div class="col-xs-8" style="background-color:lavenderblush;">
+     <h1 align="center">Hello from Kodchadri</h1>
+Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+<div>
+  <br>
+ <span id="text">CSS is designed primarily to enable the separation of document content from document presentation, including aspects such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple HTML pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
+Separation of formatting and content makes it possible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. It can also display the web page differently depending on the screen size or viewing device. Readers can also specify a different style sheet, such as a CSS file stored on their own computer, to override the one the author specified.
+Changes to the graphic design of a document (or hundreds of documents) can be applied quickly and easily, by editing a few lines in the CSS file they use, rather than by changing markup in the documents.
+The CSS specification describes a priority scheme to determine which style rules apply if more than one rule matches against a particular element. In this so-called cascade, priorities (or weights) are calculated and assigned to rules, so that the results are predictable.
+The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.<br>
+   <span class="source">Source:</span><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Wikipedia</a>
+  </span>
+</div>
+<div class="btn-container">
+<button id="toggle" class="Read-more">Read More</button>
+</div>
 
     </div>
-    <div class="col-xs-2 col-xs-2" style="background-color:lavenderblush;">
-      <h1>Hello from Kodachadri</h1>
-
-    .col-sm-4</div>
-   <div class="col-xs-2" style="background-color:lavenderblush;">.col-sm-4</div>
+   <div class="col-xs-2" ></div>
 <!-- <div class="col-xs-2" style="background-color:lavender;">.col-sm-4</div>
- -->    <div class="col-xs-2" style="background-color:lavenderblush;">.col-sm-4</div>
-  </div>
+ -->
 
-  <div class="row">
-    <div class="col-xs-2" style="background-color:lavenderblush;">.col-sm-4</div>
-<div class="col-xs-2" style="background-color:lavender;">.col-sm-4</div>
-    <div class="col-xs-2" style="background-color:lavenderblush;">.col-sm-4</div>
-  </div>
-
-  </div>
 </div>
 
 <script>
@@ -195,7 +257,24 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+$(document).ready(function() {
+  $("#toggle").click(function() {
+    var elem = $("#toggle").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle").text("Read Less");
+      $("#text").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle").text("Read More");
+      $("#text").slideUp();
+    }
+  });
+});
 </script>
 
 </body>
 </html>
+
+
