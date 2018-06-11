@@ -251,7 +251,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -259,7 +259,7 @@ body {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -287,7 +287,7 @@ body {
     opacity: 0.9;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 700px){
  .myButton{ padding: 4px 6px;
  border: none;
  cursor: pointer;
@@ -307,7 +307,16 @@ body {
 .Second-nav{
   background-color:#ffcccc;
   margin:5px 5px 5px 5px;
-}     
+  height:60px;
+  width:100%;
+}    
+@media screen and (max-width: 700px){
+ .Second-nav{  background-color:background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);;
+  margin:2px 2px 2px 2px; 
+  height: 114px;
+  }
+ 
+}
 
 
 </style>
@@ -328,13 +337,12 @@ body {
   
   <a href="#about">About</a>
   
-  <ul class="nav navbar-nav navbar-right">
   
-      <li><a href="#" style="background:"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <a href="#" style="float: right"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
   
-      <li><a href="#" style="background:;"><span class="glyphicon glyphicon-log-in"></span> Login  </a></li>
+      <a href="#" style="float: right;"><span class="glyphicon glyphicon-log-in"></span> Login  </a>
   
-  </ul>
+
   
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 
@@ -355,7 +363,7 @@ body {
 <button class="w3-button w3-display-right w3-jumbo" onclick="plusDivs(+1)">&#10095;</button>
 
  
-     <div class="Second-nav  float-lg-right well "  style="background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);height:60px;width:100%;">
+     <div class="Second-nav  float-lg-right well "  style="background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);">
      
       <div class="col-lg-6 col-sm-12 col-xs-12">
         
@@ -374,7 +382,7 @@ body {
       
         <li class="list-inline-item" style="font-size: 21px;text-align: center;">
       
-          <a href="Team.html" style="text-decoration: none">Home</a>
+          <a href="../index.html" style="text-decoration: none">Home</a>
       
         </li>
       
@@ -382,14 +390,15 @@ body {
       
           <span class="glyphicon glyphicon-menu-right" style="font-size:15px"></span>
       
-          <a href="Team.html" style="text-decoration: none">   Kodachadri</a> 
+          <a href="Kodachadri.html" style="text-decoration: none">   Kodachadri</a> 
       
         </li>
       
       </ul>        
     
     </div>
-  
+  <br>
+  <br>
   </div>
 
 
@@ -453,11 +462,11 @@ body {
 
     <div class="row">
       
-       <div class="col-xs-2">
+       <div class="col-xs-12 col-sm-2 col-lg-2">
          
        </div>
       
-       <div class="col-xs-4">
+       <div class="col-xs-12 col-sm-4 col-lg-4">
       
            <div class="card img-fluid" style="width:350px;height: 100%;">
       
@@ -487,7 +496,7 @@ body {
       
        </div>
       
-       <div class="col-xs-4">
+       <div class="col-xs-12 col-sm-4 col-lg-4">
       
            <div class="card img-fluid" style="width:350px;height: 100%;">
       
@@ -600,7 +609,7 @@ body {
 
     <div class="row">
       
-      <div class="col-xs-2"></div>
+      <div class="col-xs-12 col-lg-2 col-sm-2"></div>
   
       <div>
   
@@ -614,7 +623,7 @@ body {
       
        <div class="col-xs-2"></div>
       
-      <div class="col-xs-8" >
+      <div class="col-xs-12 col-lg-8 col-sm-8" >
       
          <div class="panel-group" id="accordion" style="background-color:lavenderblush;">
       
@@ -835,7 +844,7 @@ body {
         <h>Schedule</h>
       </div>
     
-      <div class="col-xs-6 mt-2" >
+      <div class="col-xs-12 col-sm-6 col-lg-6" >
        
         <div id="googleMap" style="width:100%;height:300px;"></div>
 
