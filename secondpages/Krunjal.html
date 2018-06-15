@@ -307,8 +307,15 @@ body {
 .Second-nav{
   background-color:#ffcccc;
   margin:5px 5px 5px 5px;
-}     
-
+  height:70px;
+  width:100%;
+}    
+@media screen and (max-width: 700px){
+ .Second-nav{ 
+  height: 114px;
+  }
+ 
+}
 
 </style>
 
@@ -317,28 +324,29 @@ body {
 <body>    
     
     
+  
     
 <div class="topnav" id="myTopnav">
-  <a href="#" style="background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);">
+  <a href="../index.html" style="background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);">
     <span class="glyphicon glyphicon-tree-conifer"></span>Trekko </a>
 
-  <a href="#news">Blog</a>
+
+  <a href="/Blog.html">Blog</a>
 
   <a href="#contact">Contact</a>
   
   <a href="#about">About</a>
   
-  <ul class="nav navbar-nav navbar-right">
   
-      <li><a href="#" style="background:"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <a href="#" style="float: right"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
   
-      <li><a href="#" style="background:;"><span class="glyphicon glyphicon-log-in"></span> Login  </a></li>
+      <a href="#" style="float: right;"><span class="glyphicon glyphicon-log-in"></span> Login  </a>
   
-  </ul>
+
   
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 
-</div>
+</div> 
 
     
 <img class="mySlides" src="../images/1.jpg" width=100% height="550px">
@@ -368,13 +376,14 @@ body {
           </p>
         
       </div>
-     <div class="col-lg-6 col-sm-12 col-xs-12">
+
+      <div class="col-lg-6 col-sm-12 col-xs-12">
       
-      <ul class="list-inline Second-nav text-right">
+     <ul class="list-inline Second-nav text-right">
       
         <li class="list-inline-item" style="font-size: 21px;text-align: center;">
       
-          <a href="Team.html" style="text-decoration: none">Home</a>
+          <a href="../index.html" style="text-decoration: none">Home</a>
       
         </li>
       
@@ -382,13 +391,15 @@ body {
       
           <span class="glyphicon glyphicon-menu-right" style="font-size:15px"></span>
       
-          <a href="Team.html" style="text-decoration: none">   Krunjal</a> 
+          <a href="Kodachadri.html" style="text-decoration: none">   Kodachadri</a> 
       
         </li>
       
       </ul>        
+     
     
     </div>
+     
   
   </div>
 
@@ -456,12 +467,12 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
 
     <div class="row">
       
-       <div class="col-xs-2">
+       <div class="col-xs-12 col-sm-2 col-lg-2">
          
        </div>
       
-       <div class="col-xs-4">
-      
+      <div class="col-xs-12 col-sm-4 col-lg-4" style="margin-top: 50px">
+
            <div class="card img-fluid" style="width:350px;height: 100%;">
       
               <img class="card-img-top" src="../images/9.jpg" alt="Card image" style="width:100%">
@@ -490,11 +501,12 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
       
        </div>
       
-       <div class="col-xs-4">
-      
+ 
+      <div class="col-xs-12 col-sm-4 col-lg-4" style="margin-top: 50px">
+
            <div class="card img-fluid" style="width:350px;height: 100%;">
       
-              <img class="card-img-top" src="../images/1.jpg" alt="Card image" style="width:100%">
+              <img class="card-img-top" src="../images/9.jpg" alt="Card image" style="width:100%">
       
               <div class="card-img-overlay" >
       
@@ -529,15 +541,15 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
 
      <div class="row">
  
-       <div class="col-xs-2">
+       <div class="col-xs-12 col-sm-2 col-lg-2">
          
        </div>
  
-       <div class="col-xs-4">
- 
+        <div class="col-xs-12 col-sm-4 col-lg-4" style="margin-top: 50px">
+
            <div class="card img-fluid" style="width:350px;height: 100%;">
  
-              <img class="card-img-top" src="../images/1.jpg" alt="Card image" style="width:100%">
+              <img class="card-img-top" src="../images/9.jpg" alt="Card image" style="width:100%">
  
               <div class="card-img-overlay" >
  
@@ -563,11 +575,11 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
   
        </div>
   
-       <div class="col-xs-4">
-  
+        <div class="col-xs-12 col-sm-4 col-lg-4" style="margin-top: 50px">
+
            <div class="card img-fluid" style="width:350px;height: 100%;">
   
-              <img class="card-img-top" src="../images/1.jpg" alt="Card image" style="width:100%">
+              <img class="card-img-top" src="../images/9.jpg" alt="Card image" style="width:100%">
   
               <div class="card-img-overlay" >
   
@@ -845,8 +857,11 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
       </div>
     
     </div>
+
 <br>
+
 <br>
+
 <br>
 
 </div>
@@ -868,7 +883,7 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
                     <h5>Get started</h5>
         
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="../index.html">Home</a></li>
                         <li><a href="#">Sign up</a></li>
                         <li><a href="#">Downloads</a></li>
                     </ul>
