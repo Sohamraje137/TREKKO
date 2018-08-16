@@ -174,6 +174,25 @@ html{
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+#text2{
+  display: none;
+}
+.Read-more2{
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:2px;
+  font-size:12px;
+  background:lavenderblush;
+
+/*  linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+*/  color:black;
+  font-family:cursive;
+  box-sizing:border-box;
+}
 #text{
 display:none;
 }
@@ -508,7 +527,7 @@ q {font-style: italic;}
   
     <div class="col-xs-12 col-sm-8 col-lg-8" style="   letter-spacing: 0.5px;">
   
-     <h3 align="left">Overview</h1>
+    <h3 align="left">Overview</h3>
       Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
     <div>
   
@@ -534,6 +553,31 @@ q {font-style: italic;}
     
           </div>
     
+    <h4 align="left">Activities</h4>
+      Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+    <div>
+  
+    <br>
+  
+    <span id="text2">
+      CSS is designed primarily to enable the separation of document content from document presentation, including aspects such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple HTML pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
+      Separation of formatting and content makes it possible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. It can also display the web page differently depending on the screen size or viewing device. Readers can also specify a different style sheet, such as a CSS file stored on their own computer, to override the one the author specified.
+      Changes to the graphic design of a document (or hundreds of documents) can be applied quickly and easily, by editing a few lines in the CSS file they use, rather than by changing markup in the documents.
+      The CSS specification describes a priority scheme to determine which style rules apply if more than one rule matches against a particular element. In this so-called cascade, priorities (or weights) are calculated and assigned to rules, so that the results are predictable.
+      The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.
+      </span>
+      <br>
+      
+    <!--   <span class="source">Source:</span><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Wikipedia</a>
+        </span> -->
+    
+    </div>
+    
+          <div class="btn-container">
+    
+              <button id="toggle2" class="Read-more2">Learn More</button>
+    
+          </div>
     </div>
 <!-- <div class="col-xs-2" style="background-color:lavender;">.col-sm-4</div>
  -->
@@ -804,7 +848,7 @@ $(document).ready(function() {
 
     var elem = $("#toggle").text();
 
-    if (elem == "Read More") {
+    if (elem == "Learn More") {
       //Stuff to do when btn is in the read more state
       $("#toggle").text("Read Less");
       $("#text").slideDown();
@@ -816,24 +860,24 @@ $(document).ready(function() {
     }
   });
 });
-// $(document).ready(function() {
+$(document).ready(function() {
 
-//   $("#toggle").click(function() {
+  $("#toggle2").click(function() {
 
-//     var elem = $("#toggle").text();
+    var elem = $("#toggle2").text();
 
-//     if (elem == "Read More") {
-//       //Stuff to do when btn is in the read more state
-//       $("#toggle").text("Read Less");
-//       $("#text").slideDown();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle2").text("Read Less");
+      $("#text2").slideDown();
 
-//     } else {
-//       //Stuff to do when btn is in the read less state
-//       $("#toggle").text("Read More");
-//       $("#text").slideUp();
-//     }
-//   });
-// });
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle2").text("Read More");
+      $("#text2").slideUp();
+    }
+  });
+});
 // </script>
  <script >
 // var TxtType = function(el, toRotate, period) {
