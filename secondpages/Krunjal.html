@@ -2,7 +2,7 @@
 
 <html>
 
-<title>  Kurinjal </title>
+<title>Trekko|Kurinjal </title>
 
 <head>
 
@@ -111,8 +111,8 @@
     color: #ef1a1a;
 }
 
-#myFooter .twitter:hover {
-    color: #00aced;
+#myFooter .instagram:hover {
+    color: red;
 }
 
 #myFooter .btn {
@@ -132,10 +132,6 @@
         text-align: center;
     }
 }
-
-
-/* CSS used for positioning the footers at the bottom of the page. */
-/* You can remove this. */
 
 html{
     height: 100%;
@@ -159,7 +155,7 @@ html{
   font-color:black;
   padding-top:10em;
   font-family: 'Waiting for the Sunrise', cursive; 
-  font-size:40px; 
+  font-size:30px; 
   margin: 10px 50px; 
   letter-spacing: 6px; 
   font-weight: bold;
@@ -178,13 +174,31 @@ html{
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+#text2{
+  display: none;
+}
+.Read-more2{
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:2px;
+  font-size:12px;
+  background:lavenderblush;
+
+/*  linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+*/  color:black;
+  font-family:cursive;
+  box-sizing:border-box;
+}
 #text{
 display:none;
 }
 .btn-container{
-  margin: auto;
   height:44px;
-  width:166.23px;
+  width:166px;
   
 }
 
@@ -199,10 +213,12 @@ a:active{
   -ms-user-select:none;
   cursor:pointer;
   border:none;
-  padding:8px;
-  font-size:20px;
-  background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-  color:white;
+  padding:2px;
+  font-size:12px;
+  background:lavenderblush;
+
+/*  linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+*/  color:black;
   font-family:cursive;
   box-sizing:border-box;
 }
@@ -218,7 +234,7 @@ a:active{
 }
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif,Waiting for the Sunrise;
   background-color: lavender;
 }
 
@@ -251,7 +267,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -259,7 +275,7 @@ body {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -277,7 +293,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70%;
+    min-height: 50%;
 }
 .myButton {
     padding: 10px 15px;
@@ -287,7 +303,7 @@ body {
     opacity: 0.9;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 700px){
  .myButton{ padding: 4px 6px;
  border: none;
  cursor: pointer;
@@ -304,131 +320,193 @@ body {
 
 }
 
+.button_color{
+  background-color: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
 .Second-nav{
   background-color:#ffcccc;
   margin:5px 5px 5px 5px;
-  height:70px;
+  height:110px;
   width:100%;
 }    
 @media screen and (max-width: 700px){
- .Second-nav{ 
+ .Second-nav{  background-color:background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);;
+  margin:2px 2px 2px 2px; 
   height: 114px;
   }
  
 }
+/*
+@media screen and (max-width: 500px){
+  .Sub-head{
+    float: center;
+  }
+}
 
+*/
+
+.table_pay{
+  margin-top: 50px;
+margin-left:0%;
+ 
+  border-radius: 20px;
+  border:1px solid red;
+}
+
+@media screen and (max-width: 500px){
+  #table{
+    margin-top: 0px;
+  }
+}
+
+
+.mySlides_quotes {
+  display: none;
+  text-align: center;
+
+}
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}  
 </style>
 
 </head>
 
 <body>    
     
-    
-  
-    
-<div class="topnav" id="myTopnav">
-  <a href="../index.html" style="background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);">
-    <span class="glyphicon glyphicon-tree-conifer"></span>Trekko </a>
-
-
-  <a href="Blog.html">Blog</a>
-
-  <a href="#contact">Contact</a>
-  
-  <a href="#about">About</a>
-  
-  
-      <a href="#" style="float: right"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
-  
-      <a href="#" style="float: right;"><span class="glyphicon glyphicon-log-in"></span> Login  </a>
   
 
-  
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-
-</div> 
-
-    
-<img class="mySlides" src="../images/1.jpg" width=100% height="550px">
-
-<img class="mySlides" src="../images/8.jpg" width=100% height="550px">
-
-<img class="mySlides" src="../images/9.jpg" width=100% height="550px">
-
-<img class="mySlides" src="../images/seven.jpg" width=100% height="550px">
-
-    
-<button class="w3-button w3-display-left w3-jumbo" onclick="plusDivs(-1)">&#10094;</button>
-
-<button class="w3-button w3-display-right w3-jumbo" onclick="plusDivs(+1)">&#10095;</button>
-
- 
-     <div class="Second-nav  float-lg-right well "  style="background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);height:60px;width:100%;">
-     
-      <div class="col-lg-6 col-sm-12 col-xs-12">
-        
-        <p id="typewrite" float-left>
-        
-              <a style="color:black" href="" class="typewrite" data-period="2000" data-type='[ "Life is adventure and adventure is life,", "Trek is in our blood", "Eat sleep trek repeat.", "Valley , falls and mountains is where i belong" ]'>
-                 <span class="wrap"></span>
-             </a>
-          
-          </p>
-        
-      </div>
-
-      <div class="col-lg-6 col-sm-12 col-xs-12">
-      
-     <ul class="list-inline Second-nav text-right">
-      
-        <li class="list-inline-item" style="font-size: 21px;text-align: center;">
-      
-          <a href="../index.html" style="text-decoration: none">Home</a>
-      
-        </li>
-      
-        <li class="list-inline-item" style="font-size: 21px">
-      
-          <span class="glyphicon glyphicon-menu-right" style="font-size:15px"></span>
-      
-          <a href="Kodachadri.html" style="text-decoration: none">   Kodachadri</a> 
-      
-        </li>
-      
-      </ul>        
-     
-    
+   <nav class="navbar-default navbar-fixed-top">
+  <div class="container-fluid" style="background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" >
+      <button  type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only" >Toggle navigation</span>
+        <!-- <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> -->
+      </button>
+      <a class="navbar-brand" href="#">Trekko</a>
     </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+                <li><a href="../index.html">Home</a></li>
+
+        <li class="active"><a href="#">Kurinjal <span class="sr-only">(current)</span></a></li>
+    
+        <li><a href="Team.html">Team</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Places <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Kodachadri.html">Kodachadri</a></li>
+            <li><a href="#">Gokarna</a></li>
+
+         
+          </ul>
+        </li>
+      </ul>
      
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+
+       
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
   
+    <br>
+    <br>  
+
+
+ <br>
+ <br>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-7">
+
+  
+      <img class="mySlides" src="../images/1.jpg" width=100% height="400px">
+
+<img class="mySlides" src="../images/9.jpg" width=100% height="400px">
+
+<img class="mySlides" src="../images/seven.jpg" width=100% height="400px">
+
+<img class="mySlides" src="../images/8.jpg" width=100% height="400px">
+
+
+<button class="w3-button w3-display-left     w3-circle button_color" onclick="plusDivs(-1)" >&#10095;</button>
+<button class="w3-button w3-display-right w3-circle" onclick="plusDivs(+1)">&#10095;</button>
+
   </div>
+ <div  class="col-lg-3" style="background-color: lavenderblush;height: 400px; ">
+  <div id="table">
 
+    
+  </div><center><br>
+      <h3 > Kurinjal</h3>
+    </center>
+              <hr style="border:1px solid powderblue">
 
-<!--             <div class="triangulo"></div>
- -->    <!--  <div class="Second-nav float-lg-right well text-left"  style="background-color:transparent;position:absolute;top:90.5%;left:0;height:16%;width:100%;">
-         <ul class="list-inline Second-nav"><span class="icon bullet_icon">7</span>
-          <li class="list-inline-item">Lorem ipsum</li>
-          <li class="list-inline-item">Phasellus iaculis</li>
-          <li class="list-inline-item">Nulla volutpat</li>
-        </ul>
-      </div> -->
-      <br>
-      <br>
-<!--       <span class=" slideInLetter" style></span>
- -->
+        <div class="row">
+
+          <div class="col-lg-4 col-sm-4 col-xs-4" >
+            Date:<br>17/08/2018.
+          </div>
+
+            <div class="col-lg-4 col-sm-4 col-xs-4"  style="border-left:solid 2px powderblue; border-right:solid 2px powderblue;">
+              Trek Difficulty:<br>
+              Medium
+          </div>
+
+            <div class="col-lg-4 col-sm-4 col-xs-4"  >
+
+            Trek Duration:<br>
+            1 days
+          </div>
+
+        </div>
+              <hr style="border:1px solid powderblue">
+
+<h3 style="color:orange"><b style="color: black">Rs:1350 </b>per person</h4></h3>
+              <hr style="border:1px solid powderblue">
+
+               <a href="Booking.html" style="text-decoration: none;text-align: center;line-height: 1.5;text-shadow: black;background-color: red"><div style="background-color: orange;border-radius: 15px" ><h2>Book Now</h2></div></a>
+             
+              <hr style="border:1px solid powderblue">
+
+<a href="Enquiry_page.html" style="text-decoration: none;text-align: center;line-height: 1.5;text-shadow: black;background-color: red"><div style="background-color: orange; border-radius: 15px" ><h2>Send Enquiry</h2></div></a>
+
+  <div class="col-lg-1">
+    
+  </div>
+    </div>
+ </div>
+
+    <br>
   <div class="container-fluid">
+    
+
   
+<br>
+<br>
+
    <div class="row">
   
-    <div class="col-xs-12 col-sm-2 col-lg-2" >   </div>
+    <div class="col-xs-12 col-sm-1 col-lg-1" >   </div>
   
-    <div class="col-xs-12 col-sm-8 col-lg-8" style="background-color:lavenderblush;">
+    <div class="col-xs-12 col-sm-8 col-lg-8" style="   letter-spacing: 0.5px;">
   
-     <h1 align="center">Welcome to  Kurinjal</h1>
-      The mist rolling in , The aroma of wet mud hitting your senses and splendid view from top.  What better way to cool off from the coastal heat and enjoy the onset of monsoon by a small trek to Kurinjal!
-
-      Soak in amidst the green of the Western Ghats and get Lost in the beauty!
-G and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+    <h3 align="left">Overview</h3>
+      Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
     <div>
   
     <br>
@@ -439,7 +517,7 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
       Changes to the graphic design of a document (or hundreds of documents) can be applied quickly and easily, by editing a few lines in the CSS file they use, rather than by changing markup in the documents.
       The CSS specification describes a priority scheme to determine which style rules apply if more than one rule matches against a particular element. In this so-called cascade, priorities (or weights) are calculated and assigned to rules, so that the results are predictable.
       The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.
-      
+      </span>
       <br>
       
     <!--   <span class="source">Source:</span><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Wikipedia</a>
@@ -453,11 +531,35 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
     
           </div>
     
+    <h4 align="left">Activities</h4>
+      Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+    <div>
+  
+    <br>
+  
+    <span id="text2">
+      CSS is designed primarily to enable the separation of document content from document presentation, including aspects such as the layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple HTML pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
+      Separation of formatting and content makes it possible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. It can also display the web page differently depending on the screen size or viewing device. Readers can also specify a different style sheet, such as a CSS file stored on their own computer, to override the one the author specified.
+      Changes to the graphic design of a document (or hundreds of documents) can be applied quickly and easily, by editing a few lines in the CSS file they use, rather than by changing markup in the documents.
+      The CSS specification describes a priority scheme to determine which style rules apply if more than one rule matches against a particular element. In this so-called cascade, priorities (or weights) are calculated and assigned to rules, so that the results are predictable.
+      The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.
+      </span>
+      <br>
+      
+    <!--   <span class="source">Source:</span><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Wikipedia</a>
+        </span> -->
+    
+    </div>
+    
+          <div class="btn-container">
+    
+              <button id="toggle2" class="Read-more2">Learn More</button>
+    
+          </div>
     </div>
 <!-- <div class="col-xs-2" style="background-color:lavender;">.col-sm-4</div>
  -->
 
-    
   </div>
 
     <br>
@@ -465,392 +567,15 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
     <br>
 
 
-    <div class="row">
-      
-       <div class="col-xs-12 col-sm-2 col-lg-2">
-         
-       </div>
-      
-      <div class="col-xs-12 col-sm-4 col-lg-4" style="margin-top: 50px">
-
-           <div class="card img-fluid" style="width:350px;height: 100%;">
-      
-              <img class="card-img-top" src="../images/9.jpg" alt="Card image" style="width:100%">
-      
-              <div class="card-img-overlay" >
-      
-               <div style="bottom:0px;position:absolute;color:white">
-      
-                <h4 class="card-title" style="text-align:center">John Doe</h4>
-      
-                <p class="card-text" >Some example text some example text.</p>
-      
-                <p> Some example text some example text. </p>
-      
-                <p> Some example text some example text. </p>
-      
-                  <p>Some example text some example text.</p>
-      
-                <a href="#" class="btn btn-primary" style="background: linear-gradient(#B993D6, #9198e5);">Read more</a>
-      
-              </div>
-      
-              </div>
-      
-            </div>
-      
-       </div>
-      
- 
-      <div class="col-xs-12 col-sm-4 col-lg-4" style="margin-top: 50px">
-
-           <div class="card img-fluid" style="width:350px;height: 100%;">
-      
-              <img class="card-img-top" src="../images/9.jpg" alt="Card image" style="width:100%">
-      
-              <div class="card-img-overlay" >
-      
-               <div style="bottom:0px;position:absolute;color:white">
-      
-                <h4 class="card-title" style="text-align:center">John Doe</h4>
-      
-                <p class="card-text" >Some example text some example text.</p>
-      
-                <p> Some example text some example text. </p>
-      
-                <p> Some example text some example text. </p>
-      
-                <p>Some example text some example text.</p>
-      
-                <a href="#" class="btn btn-primary" style="background: linear-gradient(#B993D6, #9198e5);">Read more</a>
-      
-              </div>
-      
-              </div>
-      
-            </div>
-      
-       </div>
-    
-    </div>
- 
-
- <br>
- <br>
- <br>
-
-     <div class="row">
- 
-       <div class="col-xs-12 col-sm-2 col-lg-2">
-         
-       </div>
- 
-        <div class="col-xs-12 col-sm-4 col-lg-4" style="margin-top: 50px">
-
-           <div class="card img-fluid" style="width:350px;height: 100%;">
- 
-              <img class="card-img-top" src="../images/9.jpg" alt="Card image" style="width:100%">
- 
-              <div class="card-img-overlay" >
- 
-               <div style="bottom:0px;position:absolute;color:white">
- 
-                <h4 class="card-title" style="text-align:center">John Doe</h4>
- 
-                <p class="card-text" >Some example text some example text.</p>
- 
-                <p> Some example text some example text. </p>
-  
-                <p> Some example text some example text. </p>
-  
-                <p>Some example text some example text.</p>
-  
-                <a href="#" class="btn btn-primary" style="background: linear-gradient(#B993D6, #9198e5);">Read more</a>
-  
-              </div>
-  
-              </div>
-  
-            </div>
-  
-       </div>
-  
-        <div class="col-xs-12 col-sm-4 col-lg-4" style="margin-top: 50px">
-
-           <div class="card img-fluid" style="width:350px;height: 100%;">
-  
-              <img class="card-img-top" src="../images/9.jpg" alt="Card image" style="width:100%">
-  
-              <div class="card-img-overlay" >
-  
-               <div style="bottom:0px;position:absolute;color:white">
-  
-                <h4 class="card-title" style="text-align:center">John Doe</h4>
-  
-                <p class="card-text" >Some example text some example text.</p>
-  
-                <p> Some example text some example text. </p>
-  
-                <p> Some example text some example text. </p>
-  
-                 <p>Some example text some example text.</p>
-  
-                  <a href="#" class="btn btn-primary" style="background: linear-gradient(#B993D6, #9198e5);">Read more</a>
-  
-              </div>
-  
-              </div>
-  
-            </div>
-  
-       </div>
-  
-    </div>
-
-
-  <br>
-  <br>
-  <br>
-
-
-    <div class="row">
-      
-      <div class="col-xs-2"></div>
-  
-      <div>
-  
-        <h  style="font-size:25px;"> 
-         <span class="glyphicon glyphicon-flag" style="font-size:25px;  color:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);" >  </span>  FAQ
-       </h>
-  
-      </div>
-      
-      <br>
-      
-       <div class="col-xs-2"></div>
-      
-      <div class="col-xs-8" >
-      
-         <div class="panel-group" id="accordion" style="background-color:lavenderblush;">
-      
-              <div class="panel panel-default">
-      
-                <div class="panel-heading">
-      
-                  <h4 class="panel-title">
-      
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="text-decoration:none">What all activities can be done in Kodachadri?</a>
-      
-                  </h4>
-      
-                </div>
-      
-                <div id="collapse1" class="panel-collapse collapse">
-      
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      
-                </div>
-      
-              </div>
-      
-                <div class="panel panel-default">
-      
-                  <div class="panel-heading">
-      
-                    <h4 class="panel-title">
-      
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="text-decoration:none">Collapsible Group 2</a>
-      
-                    </h4>
-      
-                  </div>
-      
-                  <div id="collapse2" class="panel-collapse collapse">
-      
-                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      
-                  </div>
-      
-                </div>
-
-                  <div class="panel panel-default">
-      
-                  <div class="panel-heading">
-      
-                    <h4 class="panel-title">
-      
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="text-decoration:none">Collapsible Group 3</a>
-      
-                    </h4>
-      
-                  </div>
-      
-                  <div id="collapse3" class="panel-collapse collapse">
-      
-                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      
-                  </div>
-      
-                </div>
-      
-                  <div class="panel panel-default">
-      
-                  <div class="panel-heading">
-      
-                    <h4 class="panel-title">
-      
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="text-decoration:none">Collapsible Group 4</a>
-      
-                    </h4>
-      
-                  </div>
-      
-                  <div id="collapse4" class="panel-collapse collapse">
-      
-                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      
-                  </div>
-      
-                </div>
-      
-                  <div class="panel panel-default">
-      
-                    <div class="panel-heading">
-      
-                      <h4 class="panel-title">
-      
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="text-decoration:none"s>Collapsible Group 5</a>
-      
-                      </h4>
-      
-                    </div>
-      
-                    <div id="collapse5" class="panel-collapse collapse">
-      
-                      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      
-                    </div>
-      
-                  </div>
-
-                   <div class="panel panel-default">
-      
-                  <div class="panel-heading">
-      
-                    <h4 class="panel-title">
-      
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="text-decoration:none">Collapsible Group 6</a>
-      
-                    </h4>
-      
-                  </div>
-      
-                  <div id="collapse6" class="panel-collapse collapse">
-      
-                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      
-                  </div>
-      
-                </div>
-      
-                 <div class="panel panel-default">
-      
-                  <div class="panel-heading">
-      
-                    <h4 class="panel-title">
-      
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="text-decoration:none">Collapsible Group 7</a>
-      
-                    </h4>
-      
-                  </div>
-      
-                  <div id="collapse7" class="panel-collapse collapse">
-      
-                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      
-                  </div>
-      
-                </div>
-      
-                 <div class="panel panel-default">
-      
-                  <div class="panel-heading">
-      
-                    <h4 class="panel-title">
-      
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse8" style="text-decoration:none">Collapsible Group 8</a>
-      
-                    </h4>
-      
-                  </div>
-      
-                  <div id="collapse8" class="panel-collapse collapse">
-      
-                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      
-                  </div>
-      
-                </div>
-      
-                 <div class="panel panel-default">
-      
-                  <div class="panel-heading">
-      
-                    <h4 class="panel-title">
-      
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse9" style="text-decoration:none">Collapsible Group 9</a>
-      
-                    </h4>
-      
-                  </div>
-      
-                  <div id="collapse9" class="panel-collapse collapse">
-      
-                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                  </div>
-      
-                </div>
-      
-            </div> 
-     
-      </div>
-    
-    </div>
-
-    <br>
-    <br>
-    <br>
-
    <div class="row">
     
-      <div class="col-xs-2" >
+      <div class="col-xs-3" >
     
       </div>
     
-      <div class="col-xs-4" >
-        <h>Schedule</h>
-      </div>
+      
     
-      <div class="col-xs-6 mt-2" >
+      <div class="col-xs-12 col-sm-6 col-lg-6" >
        
         <div id="googleMap" style="width:100%;height:300px;"></div>
 
@@ -858,14 +583,14 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
     
     </div>
 
-<br>
-
-<br>
-
-<br>
+  <br>
+  
+  <br>
+  
+  <br>
 
 </div>
-
+</div>
  <footer id="myFooter">
         
         <div class="container">
@@ -874,7 +599,7 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
         
                 <div class="col-sm-3">
         
-                    <h2 class="logo"><a href="#"> TREKKO </a></h2>
+                    <h2 class="logo"><a href="../index.html"> TREKKO </a></h2>
         
                 </div>
         
@@ -885,7 +610,6 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
                     </ul>
         
                 </div>
@@ -896,8 +620,10 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
         
                     <ul>
                         <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
+
+
+                        <li>   <a href="mailto:sohampatil798@gmail.com" rel="nofollow">Mail Us </a></li>
+                        <li><a href="secondpages/Team.html">Visit Team</a></li>
                     </ul>
         
                 </div>
@@ -907,8 +633,8 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
                     <h5>Support</h5>
         
                     <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
+                        <li><a href="secondpages/Enquiry_page.html">Send Enquiry</a></li>
+                        <li><a href="secondpages/Contact Us page.html">Contact Us</a></li>
                         <li><a href="#">Forums</a></li>
                     </ul>
         
@@ -918,12 +644,12 @@ G and XUL, and is applicable to rendering in speech, or on other media. Along wi
         
                     <div class="social-networks">
         
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
                         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                         <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
                     </div>
         
-                    <button type="button" class="btn btn-default">Contact us</button>
+                    <button type="button" class="btn btn-default">Review Us</button>
         
                 </div>
         
@@ -955,7 +681,7 @@ function myMap() {
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbMFnDAE5O6YFZZmzbnaT8S9lRsZNg3Go&callback=myMap"></script> -->
  <script>
       
-      var end=" Kurinjal peak, Kudremukh Range, ca"
+      var end="Kurinjal peak, Kudremukh Range, Nooralbettu, Karnataka, ca"
       
       var start="Mangalore, ca"
       
@@ -1006,8 +732,6 @@ function myMap() {
 
 <script>
 
-
-    
        var slideIndex = 1;
 
         manual(slideIndex);
@@ -1073,13 +797,15 @@ function myFunction() {
 
 }
 
+
+
 $(document).ready(function() {
 
   $("#toggle").click(function() {
 
     var elem = $("#toggle").text();
 
-    if (elem == "Read More") {
+    if (elem == "Learn More") {
       //Stuff to do when btn is in the read more state
       $("#toggle").text("Read Less");
       $("#text").slideDown();
@@ -1091,64 +817,27 @@ $(document).ready(function() {
     }
   });
 });
-</script>
-<script >
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
+$(document).ready(function() {
 
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
+  $("#toggle2").click(function() {
 
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
+    var elem = $("#toggle2").text();
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle2").text("Read Less");
+      $("#text2").slideDown();
 
-        var that = this;
-        var delta = 200 - Math.random() * 100;
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle2").text("Read More");
+      $("#text2").slideUp();
+    }
+  });
+});
+// </script>
+ <script >
 
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
 </script>
 </body>
 </html>

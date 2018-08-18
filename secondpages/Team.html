@@ -1,0 +1,414 @@
+  
+<!DOCTYPE html>
+<html>
+<title>Trekko|Team</title>
+<meta charset="UTF-8">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+  
+</head>
+<style>
+  
+  body {margin:0;background-color: #474e5d;}
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+</style>  
+<style>
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used*/
+    background-image: url("http://www.expresspros.co.za/wp-content/uploads/2015/09/7er_Team_Meditrainment.png");
+
+    /* Full height */
+    height: 400px ; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+        background-repeat: no-repeat;
+
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* container_timeline around content */
+.container_timeline {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container_timeline::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container_timeline to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container_timeline to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container_timeline (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container_timeline (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -12px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: lavenderblush;
+    color: black;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container_timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container_timeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container_cards {
+  padding: 0 16px;
+}
+
+.container_cards::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button_cards {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button_cards:hover {
+  background-color: #555;
+}
+</style>
+
+<body >
+
+  <nav class="navbar-default navbar-fixed-top">
+  <div class="container-fluid" style="background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" >
+      <button  type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only" >Toggle navigation</span>
+        <!-- <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> -->
+      </button>
+      <a class="navbar-brand" href="#">Trekko</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="../index.html">Home</a></li>
+        <li class="active"><a href="#">Team <span class="sr-only">(current)</span></a></li>
+      
+      </ul>
+     
+</div>
+       
+    </div><!-- /.navbar-collapse -->
+</nav>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+  <div class="col-lg-2">
+    
+  </div>
+  <div class="col-lg-8">
+    <center><h2>About Us</h2></center>
+    <hr style="border:1px solid powderblue">
+    
+<div class="timeline">
+  <div class="container_timeline left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Our Own Budding Nitk's Mechanical Engineers get an naive idea.</p>
+    </div>
+  </div>
+  <div class="container_timeline right">
+    <div class="content">
+      <h2>2018</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container_timeline left">
+    <div class="content">
+      <h2>2015</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  </div>
+  
+ 
+</div>
+
+   </div>
+
+  <div class="row">
+    <div class="col-lg-1">
+      
+    </div>
+
+    <div class="col-lg-10">
+      
+       
+   
+<div class="parallax">
+<center>
+  
+
+         <span style="margin-bottom:0%;text-shadow: #333;font-size: 30px ">The Team</span>
+       </center>
+</div>
+</div>
+</div>
+<div class="row">
+    <div class="col-lg-1">
+      
+    </div>
+    <div class="col-lg-4">
+      <div class="card">
+      <img src="../images/Bharat.jpeg" alt="Jane" style="width:100%">
+      <div class="container_cards">
+        <h4>Bharath Sainath</h4>
+        <p class="title">CEO & Founder</p>
+        <p>bharathsainath@gmail.com</p>
+        <p><button class="button_cards"><a href="mailto:bharathsainath@gmail.com" rel="nofollow" style="text-decoration: none">Contact</a></button></p>
+      </div>
+    </div>
+    </div>
+        <div class="col-lg-1"></div>
+
+    <div class="col-lg-4">
+      <div class="card">
+      <img src="../images/Sachin.jpeg" alt="Jane" style="width:100%">
+      <div class="container_cards">
+        <h4>Sachin KM</h4>
+        <p class="title">CEO & Founder</p>
+        <p>sachinkm12345@gmail.com</p>
+        <p><button class="button_cards"><a href="mailto:sachinkm12345@gmail.com" rel="nofollow" style="text-decoration: none">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+<br><br><br><br>
+<div class="row">
+    <div class="col-lg-1">
+      
+    </div>
+    <div class="col-lg-4">
+      <div class="card">
+      <img src="../images/Bharat.jpeg" alt="Jane" style="width:100%">
+      <div class="container_cards">
+        <h4>Tushar DM</h4>
+        <p class="title">Back-end Developer</p>
+        <p>tusharbarca11@gmail.com</p>
+        <p><button class="button_cards"><a href="mailto:tusharbarca11@gmail.com" rel="nofollow" style="text-decoration: none">Contact</a></button></p>
+      </div>
+    </div>
+    </div>
+        <div class="col-lg-1"></div>
+
+    <div class="col-lg-4">
+      <div class="card">
+      <img src="../images/Sachin.jpeg" alt="Jane" style="width:100%">
+      <div class="container_cards">
+        <h4>Soham Patil</h4>
+        <p class="title">Front-end Developer</p>
+        <p>sohampatil798@gmail.com</p>
+        <p><button class="button_cards"><a href="mailto:sohampatil798@gmail.com" rel="nofollow" style="text-decoration: none">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+<br><br><br><br>
+
+  <div class="row">
+    <div class="col-lg-4">
+        <div class="card">
+      <img src="../images/Bharat.jpeg" alt="Jane" style="width:100%">
+      <div class="container_cards">
+        <h4>Vaibhav Rai</h4>
+        <p class="title">Media and Content Head</p>
+        <p>vaibhavmrai@gmail.com</p>
+        <p><button class="button_cards"><a href="mailto:vaibhavmrai@gmail.com" rel="nofollow" style="text-decoration: none">Contact</a></button></p>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card">
+      <img src="../images/Sachin.jpeg" alt="Jane" style="width:100%">
+      <div class="container_cards">
+        <h4>Deeksha MS</h4>
+        <p class="title">Content Writer</p>
+        <p>deekshams222@gmail.com</p>
+        <p><button class="button_cards"><a href="mailto:deekshams222@gmail.com" rel="nofollow" style="text-decoration: none">Contact</a></button></p>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card">
+      <img src="../images/Sachin.jpeg" alt="Jane" style="width:100%">
+      <div class="container_cards">
+        <h4>Akhil Tantri</h4>
+        <p class="title">Content Writer</p>
+        <p>akhil@gmail.com</p>
+        <p><button class="button_cards"><a href="mailto:vaibhavrai@gmail.com" rel="nofollow" style="text-decoration: none">Contact</a></button></p>
+      </div>
+    </div>
+    </div>
+     
+
+
+    </div>
+  
+</div>
+
+      <br><br>
+    </div>
+
+</body>
+</html>
